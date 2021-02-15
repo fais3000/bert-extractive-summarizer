@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bert-summarizer:
+    build: .
+    image: fais3000/bert-extractive-summarizer
+    ports:
+      - '5001:5000'
+    restart: unless-stopped
